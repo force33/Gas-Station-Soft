@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gas Station Soft", "Gas Station Soft\Gas Station Soft.csproj", "{3602846F-1CE7-4896-A5F9-B857D3F7CADB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{7CAED2FA-A73F-4A4D-A7DF-31B84F7B78EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3602846F-1CE7-4896-A5F9-B857D3F7CADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3602846F-1CE7-4896-A5F9-B857D3F7CADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3602846F-1CE7-4896-A5F9-B857D3F7CADB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CAED2FA-A73F-4A4D-A7DF-31B84F7B78EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CAED2FA-A73F-4A4D-A7DF-31B84F7B78EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CAED2FA-A73F-4A4D-A7DF-31B84F7B78EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CAED2FA-A73F-4A4D-A7DF-31B84F7B78EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

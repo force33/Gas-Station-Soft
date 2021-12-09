@@ -45,6 +45,7 @@
             this.oilButton.TabIndex = 0;
             this.oilButton.Text = "Рассчет топлива";
             this.oilButton.UseVisualStyleBackColor = true;
+            this.oilButton.Click += new System.EventHandler(this.oilButton_Click);
             // 
             // infoButton
             // 
@@ -54,6 +55,7 @@
             this.infoButton.TabIndex = 1;
             this.infoButton.Text = "Информация";
             this.infoButton.UseVisualStyleBackColor = true;
+            this.infoButton.Click += new System.EventHandler(this.infoButton_Click);
             // 
             // orderButton
             // 
@@ -63,6 +65,7 @@
             this.orderButton.TabIndex = 2;
             this.orderButton.Text = "Заказ топлива";
             this.orderButton.UseVisualStyleBackColor = true;
+            this.orderButton.Click += new System.EventHandler(this.orderButton_Click);
             // 
             // exitButton
             // 
@@ -72,6 +75,7 @@
             this.exitButton.TabIndex = 3;
             this.exitButton.Text = "Закрыть кассу";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // logTB
             // 
@@ -111,6 +115,8 @@
             this.Controls.Add(this.orderButton);
             this.Controls.Add(this.infoButton);
             this.Controls.Add(this.oilButton);
+            this.MaximumSize = new System.Drawing.Size(816, 489);
+            this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "mainWindow";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

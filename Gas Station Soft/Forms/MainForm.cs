@@ -29,11 +29,17 @@ namespace Gas_Station_Soft
 
         private void loginButton_Click(object sender, EventArgs e)
         {
+            // запрос
             string command = "select * from cashiers where login = '"+ logTB.Text + "' and password = '"+ passTB.Text + "'";
+            // создание SqlConnection
             SqlConnection sqlConnection = new SqlConnection(connectionString);
+            // открытие потока 
             sqlConnection.Open();
+            // создание SqlCommand
             SqlCommand sqlCommand = new SqlCommand(command, sqlConnection);
+            // создание SqlDataReader
             SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+            // проверка условий
             if (sqlDataReader.HasRows)
             {
                 oilButton.Visible = true;
@@ -43,12 +49,43 @@ namespace Gas_Station_Soft
                 logTB.Visible = false;
                 passTB.Visible = false;
                 loginButton.Visible = false;
+                
             }
             else
             {
                 MessageBox.Show("Неверный логин или пароль");
             }
+            // закрытие потока
             sqlConnection.Close();
+        }
+
+        private void oilButton_Click(object sender, EventArgs e)
+        {
+            OilForm oilForm = new OilForm();
+            oilForm.Owner = this;
+            Visible = false;
+            oilForm.ShowDialog();
+        }
+
+        private void infoButton_Click(object sender, EventArgs e)
+        {
+            InfoForm infoForm = new InfoForm();
+            infoForm.Owner = this;
+            Visible = false;
+            infoForm.ShowDialog();
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void orderButton_Click(object sender, EventArgs e)
+        {
+            OrderForm orderForm = new OrderForm();
+            orderForm.Owner = this;
+            Visible = false;
+            orderForm.ShowDialog();
         }
     }
 }
